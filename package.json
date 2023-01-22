@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint  \"**/*.{js,jsx,ts,tsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,10 +22,13 @@
   },
   "homepage": "https://github.com/ngermeau/wbyd-client#readme",
   "devDependencies": {
+    "@vitejs/plugin-react": "^3.0.1",
+    "eslint-config-prettier": "^8.6.0",
     "prettier": "^2.8.3",
-    "vite": "^4.0.4",
-    "@vitejs/plugin-react": "^3.0.1"
+    "vite": "^4.0.4"
   },
   "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
