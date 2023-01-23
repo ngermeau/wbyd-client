@@ -1,11 +1,27 @@
 import { createRoot } from "react-dom/client"
+import { useEffect, useState } from "react"
 import Movie from "./Movie"
 
 const App = () => {
+  const [movies,setMovies] = useState([])
+
+  useEffect(() => {
+    requestMovies();
+  },[]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  async function requestMovies(){
+    const res = await fetch("https://wbyd-production.up.railway.app/movie")
+    const moviesJson = await res.json()
+    setMovies(moviesJson.data)
+  }
+
   return (
+    <div className="grid h-screen"> 
     <div>
-      <Movie name="test"/>
-      <h1>hello bro</h1>
+      {
+        movies.map(movie => <Movie title={movie.title} key={movie.id}/>)
+      }
+    </div>
     </div>
   )
 }
