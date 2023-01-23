@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Movie from "./Movie"
 
 const App = () => {
+  const thumbUrl = "https://s3.eu-central-2.wasabisys.com/wbyd/"
   const [movies, setMovies] = useState([])
 
   useEffect(() => {
@@ -24,8 +25,9 @@ const App = () => {
           director={movie.director}
           runningTime={movie.runningTime}
           trailerLink={movie.trailerLink}
-          thumbPath={movie.thumbPath}
+          thumbPath={thumbUrl + movie.thumbPath}
           synopsis={movie.synopsis}
+          // categories={movie.categories}
           key={movie.id}
         />
       ))}

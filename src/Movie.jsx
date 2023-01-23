@@ -15,24 +15,20 @@ const props = (props) => {
           </a>
         </figcaption> */}
       </figure>
-      <div className="absolute bottom-1 w-full ">
-        <h2 className="text-title text-xl uppercase font-barlow primary-color">
+      <div className="absolute bottom-1 w-full ml-2">
+        <h2 className="text-title text-xl font-bold uppercase font-barlow primary-color">
           {props.title}
           <span className="text-text text-sm"> {props.year}</span>
         </h2>
-        <div className="text-sm">
-          <ul>
-            <li>
-              Running Time <span className=""> {props.runningTime}</span>{" "}
-            </li>
-            <li>
-              Directed by <span className="">{props.director}</span>
-            </li>
-            <li>
-              <span className="">{props.tag}</span>
-            </li>
-          </ul>
-        </div>
+        <ul className="text-xs flex flex-col gap-0">
+          <li>
+            Running Time <span className=""> {props.runningTime}</span>{" "}
+          </li>
+          <li>
+            Directed by <span className="">{props.director}</span>
+          </li>
+          {/* <li>{props.categories.map((category) => category.name)}</li> */}
+        </ul>
       </div>
     </div>
   )
