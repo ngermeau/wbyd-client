@@ -7,7 +7,7 @@ const props = (props) => {
           src={props.thumbPath}
           alt={props.title}
         />
-        <figcaption className="absolute group-hover:top-1/3 z-50">
+        <figcaption className="absolute group-hover:top-12 z-50">
           <p className="p-4 text-center">{props.synopsis}</p>
           <div className="flex justify-center">
             <a
@@ -21,7 +21,7 @@ const props = (props) => {
         </figcaption>
       </figure>
       <div className="absolute bottom-0 w-full h-2/5 bg-gradient-to-t from-black to-transparent group-hover:h-full"></div>
-      <div className="absolute bottom-4 w-full ml-2 ">
+      <div className="absolute bottom-4 w-full mx-2">
         <h2 className="text-title text-xl font-bold uppercase font-barlow primary-color leading-6">
           {props.title}
           <span className="text-text text-sm"> {props.year}</span>
