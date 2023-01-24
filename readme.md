@@ -1,8 +1,8 @@
 # Todo
 
-[ ] montrer les categories
-[ ] ajouter tous les films
+[ ] finish styling d'un movie + categories + shadow
 [ ] ajouter le header
+[ ] ajouter tous les films
 [ ] ajouter le hover effect
-[ ] ajouter les animations
 [ ] faire un infinite scroll avec observable et pagination du coté backend
+[ ] ajouter les animations

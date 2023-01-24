@@ -27,7 +27,7 @@ const App = () => {
           trailerLink={movie.trailerLink}
           thumbPath={thumbUrl + movie.thumbPath}
           synopsis={movie.synopsis}
-          // categories={movie.categories}
+          categories={movie.categories}
           key={movie.id}
         />
       ))}
