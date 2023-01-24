@@ -17,7 +17,7 @@ const App = () => {
   }
 
   return (
-    <div className="text-text grid gap-2 h-screen font-poppins">
+    <div className="text-text text-sm grid gap-2 h-screen font-poppins">
       {movies.map((movie) => (
         <Movie
           title={movie.title}
