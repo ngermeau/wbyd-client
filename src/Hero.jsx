@@ -11,7 +11,7 @@ const Hero = () => {
     < div className="relative text-title" >
       {hero}
       <div className="absolute border-2 border-text font-barlow text-1xl bottom-2 right-2 padding px-2 py-4">
-        <a onClick={toggleHero} className="underline"> about </a>
+        <a onClick={toggleHero} className="underline font-bold"> about </a>
       </div>
     </div >
   )
