@@ -7,7 +7,7 @@ const Movie = (props) => {
           src={props.thumbPath}
           alt={props.title}
         />
-        <figcaption className="absolute group-hover:top-24 group-hover:translate-y-[-50%] group-hover:z-10 group-hover:animate-txtFadeIn">
+        <figcaption className="absolute group-hover:top-24 group-hover:translate-y-[-50%] group-hover:z-10 group-hover:animate-txtFadeIn invisible group-hover:visible">
           <p className="p-4 text-center">{props.synopsis}</p>
           <div className="flex justify-center">
             <a
