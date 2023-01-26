@@ -3,9 +3,13 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,html}"],
   theme: {
     extend: {
+      gridAutoRows: {
+        '400': '400px',
+        '1fr': '1fr'
+      },
       gridTemplateColumns: {
         "auto-fit-16": "repeat(auto-fit, minmax(16rem, 1fr))",
-        "auto-rows-400": "400px",
+        "max-1fr": "max-content 1fr"
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -16,6 +20,19 @@ module.exports = {
         title: "#f4533f",
         text: "#ebdbc2",
       },
+      keyframes: {
+        fadeIn: {
+          "0%": {
+            opacity: 0.4
+          },
+          "100%": {
+            opacity: 1
+          }
+        }
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.9s',
+      }
     },
   },
   plugins: [],

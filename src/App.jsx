@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client"
 import { useEffect, useState } from "react"
 import Movie from "./Movie"
+import Hero from "./Hero.jsx"
 
 const App = () => {
   const thumbUrl = "https://s3.eu-central-2.wasabisys.com/wbyd/"
@@ -17,21 +18,24 @@ const App = () => {
   }
 
   return (
-    <div className="text-text text-sm grid gap-2 h-screen font-poppins">
-      {movies.map((movie) => (
-        <Movie
-          title={movie.title}
-          year={movie.year}
-          director={movie.director}
-          runningTime={movie.runningTime}
-          trailerLink={movie.trailerLink}
-          thumbPath={thumbUrl + movie.thumbPath}
-          synopsis={movie.synopsis}
-          categories={movie.categories}
-          key={movie.id}
-        />
-      ))}
-    </div>
+    <div className="bg-background text-text text-sm grid auto-rows-400 gap-1 font-poppins sm:grid-cols-auto-fit-16">
+      <Hero></Hero>
+      {
+        movies.map((movie) => (
+          <Movie
+            title={movie.title}
+            year={movie.year}
+            director={movie.director}
+            runningTime={movie.runningTime}
+            trailerLink={movie.trailerLink}
+            thumbPath={thumbUrl + movie.thumbPath}
+            synopsis={movie.synopsis}
+            categories={movie.categories}
+            key={movie.id}
+          />
+        ))
+      }
+    </div >
   )
 }
 
