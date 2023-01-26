@@ -18,7 +18,7 @@ const App = () => {
   }
 
   return (
-    <div className="bg-background text-text text-sm grid auto-rows-400 gap-1 font-poppins sm:grid-cols-auto-fit-16">
+    <div className="bg-background overflow-hidden text-text text-sm grid auto-rows-400 gap-1 font-poppins sm:grid-cols-auto-fit-16">
       <Hero></Hero>
       {
         movies.map((movie) => (

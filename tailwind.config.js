@@ -21,7 +21,15 @@ module.exports = {
         text: "#ebdbc2",
       },
       keyframes: {
-        fadeIn: {
+        imgFadeIn: {
+          "0%": {
+            opacity: 0.4
+          },
+          "100%": {
+            opacity: 0.8
+          }
+        },
+        txtFadeIn: {
           "0%": {
             opacity: 0.4
           },
@@ -31,7 +39,8 @@ module.exports = {
         }
       },
       animation: {
-        fadeIn: 'fadeIn 0.9s',
+        imgFadeIn: 'imgFadeIn 0.9s',
+        txtFadeIn: 'txtFadeIn 0.9s',
       }
     },
   },
