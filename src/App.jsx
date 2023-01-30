@@ -1,40 +1,14 @@
 import { createRoot } from "react-dom/client"
-import { useEffect, useState } from "react"
-import Movie from "./Movie"
+import MoviesList from "./MoviesList.jsx"
 import Hero from "./Hero.jsx"
 
 const App = () => {
-  const thumbUrl = "https://s3.eu-central-2.wasabisys.com/wbyd/"
-  const [movies, setMovies] = useState([])
-
-  useEffect(() => {
-    requestMovies()
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
-
-  async function requestMovies() {
-    const res = await fetch("https://wbyd-production.up.railway.app/movie")
-    const moviesJson = await res.json()
-    setMovies(moviesJson.data)
-  }
+  const imgStorage = "https://s3.eu-central-2.wasabisys.com/wbyd/"
 
   return (
     <div className="bg-background overflow-hidden text-text text-sm grid auto-rows-400 gap-1 font-poppins sm:grid-cols-auto-fit-16">
-      <Hero></Hero>
-      {
-        movies.map((movie) => (
-          <Movie
-            title={movie.title}
-            year={movie.year}
-            director={movie.director}
-            runningTime={movie.runningTime}
-            trailerLink={movie.trailerLink}
-            thumbPath={thumbUrl + movie.thumbPath}
-            synopsis={movie.synopsis}
-            categories={movie.categories}
-            key={movie.id}
-          />
-        ))
-      }
+      <Hero />
+      <MoviesList imgStorage={imgStorage} />
     </div >
   )
 }

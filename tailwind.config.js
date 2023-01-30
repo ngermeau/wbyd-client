@@ -36,11 +36,20 @@ module.exports = {
           "100%": {
             opacity: 1
           }
+        },
+        entrance: {
+          "0%": {
+            opacity: 0
+          },
+          "100%": {
+            opacity: 1
+          }
         }
       },
       animation: {
         imgFadeIn: 'imgFadeIn 0.9s',
         txtFadeIn: 'txtFadeIn 0.9s',
+        entrance: 'entrance 1s',
       }
     },
   },

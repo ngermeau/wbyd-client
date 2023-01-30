@@ -1,6 +1,6 @@
 const Movie = (props) => {
   return (
-    <div id={props.title} className="group relative">
+    <div id={props.title} className="group relative animate-entrance">
       <figure className="h-full">
         <img
           className="w-full h-full object-cover"
