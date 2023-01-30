@@ -10,41 +10,39 @@ const MoviesList = (props) => {
 
   const [movies, setMovies] = useState([])
   const [offset, setOffset] = useState({ offset: 0 })
-  const firstUpdate = useRef(true);
+  const observed = useRef()
 
 
   const observer = useRef(new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
       console.log("last element being seen loading changing the state")
       setOffset((prevOffset) => {
-        return { offset: 10 + prevOffset.offset }
+        return { offset: 2 + prevOffset.offset }
       })
     }
   }, { threshold: 0.1 }))
 
   useEffect(() => {
-    if (firstUpdate.current) {
-      firstUpdate.current = false;
-      return
-    }
     console.log('in useeffect')
-    requestMovies(offset, 10)
+    requestMovies(offset, 2)
+    observer.current.unobserve(observed.current)
   }, [offset]) // eslint-disable-line react-hooks/exhaustive-deps
 
 
   async function requestMovies(offset, limit) {
     console.log("loading data")
-    const res = await fetch(`https://wbyd-production.up.railway.app/movie?offset=${offset.offset}&limit=10`)
+    const res = await fetch(`https://wbyd-production.up.railway.app/movie?offset=${offset.offset}&limit=2`)
     const moviesJson = await res.json()
     console.log(movies)
     console.log(moviesJson)
     setMovies([...movies, ...moviesJson.data])
+    // observer.current.unobserve(observed.current)
   }
 
-  const setObserved = (e) => {
-    if (e) {
-      // observer.current.disconnect()     // disconnect from last element 
-      observer.current.observe(e)
+  const setObserved = (element) => {
+    if (element) {
+      observed.current = element
+      observer.current.observe(observed.current)
     }
   }
 

@@ -49,7 +49,7 @@ module.exports = {
       animation: {
         imgFadeIn: 'imgFadeIn 0.9s',
         txtFadeIn: 'txtFadeIn 0.9s',
-        entrance: 'entrance 1s',
+        entrance: 'entrance 1.5s',
       }
     },
   },
