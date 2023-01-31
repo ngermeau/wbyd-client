@@ -21,6 +21,7 @@ import { Fragment, useEffect, useRef, useState } from "react"
 const MoviesList = (props) => {
 
   const take = 4
+
   const [query, setQuery] = useState({ skip: 0, take: take })
   const [movies, setMovies] = useState([])
   const [hasMore, setHasMore] = useState(true)
@@ -40,12 +41,11 @@ const MoviesList = (props) => {
 
 
   async function requestMovies(query) {
-    const res = await fetch(`https://wbyd-production.up.railway.app/movie?offset=${query.skip}&limit=${query.take}`)
+    const res = await fetch(`${import.meta.env.VITE_MOVIES_API_URL}?offset=${query.skip}&limit=${query.take}`)
     const moviesJson = await res.json()
     if (moviesJson.data.length === 0) {
       setHasMore(false)
     }
-    console.log(moviesJson)
     setMovies([...movies, ...moviesJson.data])
   }
 
@@ -58,7 +58,6 @@ const MoviesList = (props) => {
 
   return (
     <Fragment>
-      {console.log("rendering")}
       {movies.map((movie) => (
         <Movie
           title={movie.title}
