@@ -12,7 +12,7 @@ import { Fragment, useEffect, useRef, useState } from "react"
  * 5) render with new movies  
  * 6) new element ref (last div) to be observed is put into a ref and our observer observe it
  * 7) if element is displayed on screen with treshold, observer changing the state of query to fetch next batch  
- * 8)   because query state has changed -> 1) useeffect will be trigger (watching on query) and a render will be triggered
+ * 8)   because query state has changed -> 1) useeffect will be trigger (watching on query dep) and a render will be triggered
  * 9)   useEffect is triggered and data is loaded 
  * 10)  data loading is updating movie state with new movies -> render will be triggered 
  * 11)  unobserving the current observed element
@@ -21,8 +21,9 @@ import { Fragment, useEffect, useRef, useState } from "react"
 const MoviesList = (props) => {
 
   const take = 4
-  const [movies, setMovies] = useState([])
   const [query, setQuery] = useState({ skip: 0, take: take })
+  const [movies, setMovies] = useState([])
+  const [hasMore, setHasMore] = useState(true)
   const observed = useRef()
 
   const observer = useRef(new IntersectionObserver((entries) => {
@@ -30,14 +31,21 @@ const MoviesList = (props) => {
   }, { threshold: 0.1 }))
 
   useEffect(() => {
-    requestMovies(query)
-    observer.current.unobserve(observed.current)
+    if (hasMore) {
+      requestMovies(query)
+      // unobserving is necessary to trigger muliple time the first load 
+      observer.current.unobserve(observed.current)
+    }
   }, [query]) // eslint-disable-line react-hooks/exhaustive-deps
 
 
   async function requestMovies(query) {
     const res = await fetch(`https://wbyd-production.up.railway.app/movie?offset=${query.skip}&limit=${query.take}`)
     const moviesJson = await res.json()
+    if (moviesJson.data.length === 0) {
+      setHasMore(false)
+    }
+    console.log(moviesJson)
     setMovies([...movies, ...moviesJson.data])
   }
 

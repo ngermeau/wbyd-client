@@ -7,6 +7,8 @@
 [x] ajoute le info  
 [x] hover pas full black  
 [x] ajouter les animations  
-[ ] faire un infinite scroll avec observable et pagination du coté backend
-[ ] overflow hidden
-[ ] loading des films
+[x] faire un infinite scroll avec observable et pagination du coté backend
+[x] eviter d'avoir des infinite call a la fin 
+[x] overflow hidden avec backgroud sur toute la page 
+[ ] livraison railway
+[ ] loading de tous les films
