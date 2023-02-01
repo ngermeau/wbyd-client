@@ -31,7 +31,7 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 ## Movies Candidates
 [] seven samourai   
 [] stalker    
-[] pi 
+[] pi   
 [] the wizard of oz   
 [] metropolis    
 [] The Umbrellas of Cherbourg    
@@ -57,7 +57,7 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 [] Stranger Than Paradise   
 [] burnt by the sun   
 [] no man's land    
-[] el topo
+[] el topo  
 [] the royal tenenbaums   
 [] mississipi burning   
 [] the swimming pool   
