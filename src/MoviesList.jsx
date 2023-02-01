@@ -41,7 +41,7 @@ const MoviesList = (props) => {
 
 
   async function requestMovies(query) {
-    const res = await fetch(`${import.meta.env.VITE_MOVIES_API_URL}?offset=${query.skip}&limit=${query.take}`)
+    const res = await fetch(`${import.meta.env.VITE_MOVIES_API_URL}/movie?offset=${query.skip}&limit=${query.take}`)
     const moviesJson = await res.json()
     if (moviesJson.data.length === 0) {
       setHasMore(false)
