@@ -29,6 +29,7 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 * For any contributions (bugs, features requests...) just send a PR, or [create an issue](https://github.com/ngermeau/watch_before_you_die/issues/new)
 
 ## Movies Candidates
+[] planet of the apes   
 [] seven samourai   
 [] stalker    
 [] pi   
@@ -36,7 +37,6 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 [] metropolis    
 [] The Umbrellas of Cherbourg    
 [] le salaire de la peur    
-[] planet of the apes   
 [] Jacob's Ladder  
 [] La haine   
 [] being john malkovish    
@@ -51,7 +51,6 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 [] Delicatessen  
 [] Enter the Void  
 [] The elephant man      
-[] lost in translation   
 [] incendies   
 [] Barton Fink  
 [] Stranger Than Paradise   
