@@ -29,7 +29,7 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 * For any contributions (bugs, features requests...) just send a PR, or [create an issue](https://github.com/ngermeau/watch_before_you_die/issues/new)
 
 ## Movies Candidates
-[] planet of the apes   
+[] The Great Escape
 [] seven samourai   
 [] stalker    
 [] pi   
@@ -41,7 +41,6 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 [] La haine   
 [] being john malkovish    
 [] whisplash   
-[] A Prophet  
 [] 12 Angry Men    
 [] ikuru  
 [] dark city    
@@ -63,7 +62,6 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 [] le ruban blanc   
 [] uncle bonnmee    
 [] bamako   
-[] die hard   
 
 ## Origins & License
 
