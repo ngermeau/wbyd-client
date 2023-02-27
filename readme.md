@@ -4,9 +4,11 @@
   </a>
 </p>
 
-## [Watch Before You Die](https://watchbeforeyoudie.com) 
-This repository is the code behind [https://watchbeforeyoudie.com](https://watchbeforeyoudie.com) which publish a compilation of movies to watch before you die (no shit...).   
-> *No good movie is too long and no bad movie is short enough - Roger Ebert.*
+## [Watch Before You Die](https://watchbeforeyoudie.com)
+
+This repository is the code behind [https://watchbeforeyoudie.com](https://watchbeforeyoudie.com) which publish a compilation of movies to watch before you die (no shit...).
+
+> _No good movie is too long and no bad movie is short enough - Roger Ebert._
 
 <p align="center">
   <a href="https://watchbeforeyoudie.com/">
@@ -16,52 +18,56 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 
 ## Table of contents
 
-- [Movie submission](#movie-submission)  
-- [Contribution](#contribution)  
+- [Movie submission](#movie-submission)
+- [Contribution](#contribution)
 - [Movies candidates](#movies-candidates)
-- [Still todo](#Still-todo)  
-- [Licensing](#Licensing)  
+- [Still todo](#Still-todo)
+- [Licensing](#Licensing)
 
-## Movie submission 
-* Submissions of new movies are welcome by [creating an issue](https://github.com/ngermeau/watch_before_you_die/issues/new)
+## Movie submission
+
+- Submissions of new movies are welcome by [creating an issue](https://github.com/ngermeau/watch_before_you_die/issues/new)
 
 ## Contribution
-* For any contributions (bugs, features requests...) just send a PR, or [create an issue](https://github.com/ngermeau/watch_before_you_die/issues/new)
+
+- For any contributions (bugs, features requests...) just send a PR, or [create an issue](https://github.com/ngermeau/watch_before_you_die/issues/new)
 
 ## Movies Candidates
+
 [] The Great Escape
-[] seven samourai   
-[] stalker    
-[] pi   
-[] the wizard of oz   
-[] metropolis    
-[] The Umbrellas of Cherbourg    
-[] le salaire de la peur    
+[] Alice in wonderland
+[] seven samourai  
+[] stalker  
+[] pi  
+[] the wizard of oz  
+[] metropolis  
+[] The Umbrellas of Cherbourg  
+[] le salaire de la peur  
 [] Jacob's Ladder  
-[] La haine   
-[] being john malkovish    
-[] whisplash   
-[] 12 Angry Men    
+[] La haine  
+[] being john malkovish  
+[] whisplash  
+[] 12 Angry Men  
 [] ikuru  
-[] dark city    
+[] dark city  
 [] in the names of the father  
 [] Children of Paradise  
 [] la grande bouffe  
 [] Delicatessen  
 [] Enter the Void  
-[] The elephant man      
-[] incendies   
+[] The elephant man  
+[] incendies  
 [] Barton Fink  
-[] Stranger Than Paradise   
-[] burnt by the sun   
-[] no man's land    
+[] Stranger Than Paradise  
+[] burnt by the sun  
+[] no man's land  
 [] el topo  
-[] the royal tenenbaums   
-[] mississipi burning   
-[] the swimming pool   
-[] le ruban blanc   
-[] uncle bonnmee    
-[] bamako   
+[] the royal tenenbaums  
+[] mississipi burning  
+[] the swimming pool  
+[] le ruban blanc  
+[] uncle bonnmee  
+[] bamako 
 
 ## Origins & License
 
