@@ -39,11 +39,9 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 [] stalker  
 [] pi  
 [] the wizard of oz  
-[] metropolis  
 [] The Umbrellas of Cherbourg  
 [] le salaire de la peur  
 [] Jacob's Ladder  
-[] La haine  
 [] being john malkovish  
 [] whisplash  
 [] 12 Angry Men  
