@@ -1,6 +1,6 @@
 const Movie = (props) => {
   return (
-    <div id={props.title} className="group relative animate-entrance">
+    <div id={props.title} className="group relative animate-entranceMovie">
       <figure className="h-full">
         <img
           className="w-full h-full object-cover"
@@ -38,4 +38,4 @@ const Movie = (props) => {
   )
 }
 
-export default Movie 
+export default Movie

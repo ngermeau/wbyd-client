@@ -34,7 +34,6 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 
 ## Movies Candidates
 
-[] The Great Escape
 [] Alice in wonderland
 [] seven samourai  
 [] stalker  
@@ -67,7 +66,7 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 [] the swimming pool  
 [] le ruban blanc  
 [] uncle bonnmee  
-[] bamako 
+[] bamako
 
 ## Origins & License
 
