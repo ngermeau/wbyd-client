@@ -66,6 +66,11 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 [] uncle bonnmee  
 [] bamako
 
+## Still todo
+[ ] Not super clean animation when loading of images  
+[ ] Add Seo   
+[ ] Snap to scroll for mobile  
+
 ## Origins & License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
