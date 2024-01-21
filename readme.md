@@ -65,11 +65,13 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 [] le ruban blanc  
 [] uncle bonnmee  
 [] bamako
-- animal kingdom 
-- the Truman show 
-- joker 
-- the pianist 
-- etnernal sunshine of a spotless mine
+[] animal kingdom 
+[] the Truman show 
+[] joker 
+[] the pianist 
+[] etnernal sunshine of a spotless mine
+[] la vita es bella
+[] amen
 
 ## Still todo
 [ ] Not super clean animation when loading of images  
