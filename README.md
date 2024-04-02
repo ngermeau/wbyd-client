@@ -69,7 +69,7 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 ## Still todo
 [ ] Not super clean animation when loading of images  
 [ ] Add Seo   
-[ ] Snap to scroll for mobile  
+[ ] Snap to scroll for mobile
 
 ## Origins & License
 

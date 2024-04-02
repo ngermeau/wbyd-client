@@ -1,0 +1,51 @@
+
+---
+import heart from '../../public/images/heart.png'
+import github from '../../public/images/github.png'
+---
+
+<script>
+    const aboutButton= document.querySelector('.about-button');
+    const titlePanel= document.querySelector('.title-panel');
+    const aboutPanel= document.querySelector('.about-panel');
+
+    aboutButton.addEventListener('click', () => {
+        if (titlePanel.classList.contains("hidden")){
+            aboutPanel.classList.add("hidden");
+            titlePanel.classList.remove("hidden")
+        }else {
+            titlePanel.classList.add("hidden");
+            aboutPanel.classList.remove("hidden")
+        }
+    });
+</script>
+<div class="relative">
+    <!--<div class="text-title">-->
+            <div class="title-panel text-title h-full grid auto-rows-fr items-center grid-cols-max-1fr font-bold font-barlow">
+                <div class="text-9xl [writing-mode:vertical-lr]"> W </div>
+                <div class="text-5xl leading-none"> atch </div>
+                <div class="text-9xl [writing-mode:vertical-lr]"> B </div>
+                <div class="text-5xl"> efore </div>
+                <div class="text-9xl [writing-mode:vertical-lr]"> Y </div>
+                <div class="text-5xl"> ou </div>
+                <div class="text-9xl [writing-mode:vertical-lr]"> D </div>
+                <div class="text-5xl"> ie </div>
+            </div>
+        <div class="about-panel hidden">
+            <p class="p-3 text-text text-lg sm:text-base">
+                After couple of requests from friends asking advices on movies to watch, I've decided to create <span class="text-title">Watch
+          Before You Die</span> to share the collection of my all time favorite movies. If you feel that we share the
+                same kind of taste and think of any worthwhile addition to this list, please feel free to <a class="underline" href="https://github.com/ngermeau/wbyd-client/issues/new">send a request.</a>
+            </p>
+            <p class="p-3">
+                Made with <img class="w-5 inline-block m-1" src={heart.src} /> on
+                <a href="https://github.com/ngermeau/wbyd-client" target="_blank" rel="noreferrer noopener">
+                    <img class="w-6 inline-block m-1" src={github.src} />
+                </a>
+            </p>
+        </div>
+    <!--</div>-->
+    <div class="absolute border-2 border-text font-barlow text-1xl bottom-2 right-2 padding px-2 py-4 animate-entranceAbout">
+        <a class="underline font-bold about-button text-title"> about </a>
+    </div>
+</div>

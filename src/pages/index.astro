@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MoviesList from "../components/MoviesList";
+import Hero from "../components/Hero.astro";
+
+let IMG_STORAGE_URL= "https://f005.backblazeb2.com/file/watchbeforeyoudie/"
+---
+
+<layout title="welcome to astro.">
+	<main>
+		<div class="bg-background overflow-hidden text-text text-sm grid auto-rows-400 gap-1 font-poppins sm:grid-cols-auto-fit-16">
+			<Hero />
+			<MoviesList imgStorageUrl={IMG_STORAGE_URL} client:only/>
+		</div >
+	</main>
+</Layout>
+
+<style>
+</style>

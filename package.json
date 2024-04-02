@@ -1,43 +1,24 @@
 {
-  "name": "wbyd-client",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "watch-before-you-die",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "start": "npx http-server ./dist",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint": "eslint  \"src/**/*.{js,jsx,ts,tsx}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ngermeau/wbyd-client.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ngermeau/wbyd-client/issues"
-  },
-  "homepage": "https://github.com/ngermeau/wbyd-client#readme",
-  "devDependencies": {
-    "@vitejs/plugin-react": "^3.0.1",
-    "autoprefixer": "^10.4.13",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react": "^7.32.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.3",
-    "tailwindcss": "^3.2.4",
-    "vite": "^4.0.4"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^3.1.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@types/react": "^18.2.73",
+    "@types/react-dom": "^18.2.23",
+    "astro": "^4.5.9",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind": "^4.0.0"
+    "tailwindcss": "^3.4.1"
   }
 }
