@@ -28,15 +28,16 @@ This repository is the code behind [https://watchbeforeyoudie.com](https://watch
 
 ## Movies Candidates
 
+[] being john malkovish  
+[] eternal sunshine of a spotless mind
 [] Alice in wonderland
 [] seven samourai  
 [] stalker  
 [] pi  
 [] the wizard of oz  
 [] The Umbrellas of Cherbourg  
-[] le salaire de la peur  
-[] Jacob's Ladder  
-[] being john malkovish  
+[] le salaire de la peur j
+[] persona
 [] whisplash  
 [] 12 Angry Men  
 [] ikuru  
