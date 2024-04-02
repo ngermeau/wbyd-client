@@ -1,9 +1,3 @@
-<p>
-  <a href="https://watchbeforeyoudie.com/">
-    <img src="logo.png" alt="Watch Before You Die Logo" width="267" height="372">
-  </a>
-</p>
-
 ## [Watch Before You Die](https://watchbeforeyoudie.com)
 
 This repository is the code behind [https://watchbeforeyoudie.com](https://watchbeforeyoudie.com) which publish a compilation of movies to watch before you die (no shit...).
