@@ -1515,5 +1515,21 @@
     ],
     "imdbScore": 7.5,
     "synopsis": "Two youngsters from rival New York City gangs fall in love, but tensions between their respective friends build toward tragedy."
+  },
+  {
+    "id": 78,
+    "title": "The Pianist",
+    "year": 2002,
+    "director": "Roman Polanski",
+    "runningTime": "2h 30min",
+    "trailerLink": "https://www.youtube.com/watch?v=BFwGqLa_oAo",
+    "thumbPath": "the-pianist.jpeg",
+    "categories": [
+      { "name": "Biography" },
+      { "name": "Drama" },
+      { "name": "Music" }
+    ],
+    "imdbScore": 8.5,
+    "synopsis": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II."
   }
 ]
