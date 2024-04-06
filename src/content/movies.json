@@ -1531,5 +1531,21 @@
     ],
     "imdbScore": 8.5,
     "synopsis": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II."
-  }
+  },
+  {
+  "id": 79,
+  "title": "Being John Malkovich",
+  "year": 1999,
+  "director": "Spike Jonze",
+  "runningTime": "1h 52min",
+  "trailerLink": "https://www.youtube.com/watch?v=OT0v7PwS2m0",
+  "thumbPath": "being-john-malkovich.jpg",
+  "categories": [
+    { "name": "Comedy" },
+    { "name": "Drama" },
+    { "name": "Fantasy" }
+  ],
+  "imdbScore": 7.7,
+  "synopsis": "A puppeteer discovers a portal that leads literally into the head of movie star John Malkovich."
+}
 ]
